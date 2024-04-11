@@ -1,0 +1,55 @@
+
+__**Negative indexing**__
+You can access a list starting from the end by indexing with negatives.
+`list[-1]`
+
+```Python
+Example: 
+    
+	shopping_list = ["apples", "bananas", "cherries"]
+	print(shopping_list[-1])
+
+```
+This will output the first item from the end of the list : "cherries"
+
+**List slicing**
+You can address multiple items in a list by using slicing.
+While using this method, you give your code a certain range in your list of the element you would like to access in form of indexes.
+The last item in this range is NOT included.
+```Python
+list[0:2]
+list[2:4]
+list[5:7]
+```
+
+```Python
+Example: 
+    
+	shopping_list = ["apples", "bananas", "cherries", "coconut", "good bread"]
+	print(shopping_list[0:2])
+```
+This will output the items of the index in range 0 to 2 with the index2 excluded : ["apples", "bananas"]
+```Python
+	print(shopping_list[3:4])
+```
+This will output the items of the index in range 3 to 4 with the index4 excluded : ["coconut"]
+
+
+
+**Merging lists**
+```
+You can merge lists into one by using the .extend() method.
+
+list1.extend(list2)
+
+ ---------------------------
+Example: 
+        coop = ["bananas", "apples", "good bread"]
+	ica = ["sausages", "steak", "chicken"]
+	coop.extend(ica)
+	print(coop)
+
+	This will output the merged lists in the variable coop : 
+	["bananas", "apples", "good bread", "sausages", "steak", "chicken"]
+
+```

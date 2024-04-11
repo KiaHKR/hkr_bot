@@ -1,0 +1,55 @@
+__**While loops:**__
+
+**Basic while loops**
+While loops repeat through a given code until a set condition is met.
+When constructing a while loop, a condition in given that needs to be met.
+```
+A while loop can be:
+		 forced to return to the start by using "continue".
+		 forced to end the loop by using "break".
+
+while condition = False:
+	code to execute
+```
+```Python
+Example: 
+
+hungry = false
+while hungry = false:
+	print("You not hungry")
+	hunger = input("Are you hungry now?")
+	if hunger = "yes":
+		hungry = true
+print("You should eat")
+```
+This loop will continously run until the user responds with "yes"
+and at the end of the loop print ("You should eat")
+
+
+**Nested while loops**
+While loops, like for loops, can be nested in many ways.
+
+```Python
+while condition1:
+	while not condition 2:
+		code to execute
+	code to execute
+```
+```Python
+Example: 
+	hungry = True
+	thirsty = True
+
+	while hungry:
+		while thirsty:
+			print("Please drink")
+			drink = input("Did you drink?")
+			if drink == "yes":
+				thirsty = False
+		eat = input("Did you eat?")
+		if eat == "yes":
+			hungry = False
+	print("You are not hungry or thirsty")
+
+
+```

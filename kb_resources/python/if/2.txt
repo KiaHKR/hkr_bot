@@ -1,0 +1,29 @@
+_ _
+**if elif**
+Sometimes if statements can have multiple if-else's in the strcture. 
+```Python
+
+Structure : 
+	if condition1 == True:
+		code to execute
+	else:
+		if condition2 == True:
+			code to execute
+		else: 
+			if condition3 == True:
+				code to execute
+			else:
+				code to execute
+
+```
+This structure is NOT efficient and clean and can be improved by using elif instead of else:   if:
+```Python
+if condition1 == True:
+	code to execute
+elif condition2 == True:
+	code to execute
+elif condition3 == True:
+	code to execute
+
+```
+This structure is much cleaner, easier to read and runs much faster.

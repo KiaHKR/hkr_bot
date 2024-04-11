@@ -1,0 +1,41 @@
+__**Tuples:**__
+
+**Creating tuples**
+You create a new tuple by writing : 
+`tuplename = ()`
+
+When creating a tuple, you can add items to it upon creating it.
+`tuplename = ("item1", "item2", "item3")`
+
+A tuple is iterable meaning each element in the tuple can be adressed individually.
+```Python
+Example: 
+	shopping_tuple = ("apples", "bananas", "cherries")
+```
+
+**Adressing a specific item in a tuple**
+You can address a specific item in the tuple by using indexes.
+While you might think the first element in a tuple has index 1, the indexing itself always starts at 0.
+To address the first element in your tuple, you address your tuple and then provide it the index of the item.
+`tuple[0]`
+
+```Python
+Example: 
+	shopping_tuple = ("apples", "bananas", "cherries")
+	print(shopping_tuple[1])
+```
+This will output the item at index 1 : "bananas"
+Since indexing starts at 0, "apples" would be 0 and "bananas" in this case is 1.	
+
+**Adding to a tuple**
+
+You can't add items to a tuple once it has been created.
+Compared to lists, tuples run faster but are immutable.
+
+
+**Removing from a tuple**
+
+You can't remove items from a tuple once it has been created.
+Compared to lists, tuples run faster but are immutable.
+
+

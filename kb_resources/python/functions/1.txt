@@ -1,0 +1,36 @@
+__**Functions:**__
+
+**Explanation**
+Python reads and runs code from line to line, even the code it read does not need to be used.
+This can increase the runtime for programs significantly.
+To solve this issue and to keep the code cleaner, we use functions.
+To create a function, you write def functionName(): and follow with the code to execute
+```Python
+Example: 
+    def printIntro():
+    print("Hello World")
+
+```
+**In practice**
+Based on the previous example, if we now type "printInto()" in our code, it will run everything in that method.
+In this case, it will print "Hello World" and return to the main code.
+
+We can develop this further by having code before and after the function call.
+```Python
+
+Example:
+	def print_hello():
+		print("Hello and welcome to this example program.")
+		print("This program will show you how to use functions.")
+		print("You will find that functions allow for much cleaner and easier code as you continue your studies.")
+
+	name = input("What is your name?: ")
+	print(f'User {name} identified.')
+	print_hello()    
+```
+Output to the console : 
+   What is your name?: Tom
+    User Tom identified.
+    Hello and welcome to this example program.
+    This program will show you how to use functions.
+    You will find that functions allow for much cleaner and easier code as you continue your studies.

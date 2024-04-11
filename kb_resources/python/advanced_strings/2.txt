@@ -1,0 +1,77 @@
+_ _
+__**Indexing strings**__
+
+When it comes to indexing strings work in the same was as lists and other array types. It is possible to access individual characters in the string you can use the following format:
+  `string[index_to_access]`
+
+
+In the same way that lists allow you to loop over them using a for-loop, strings allows for the same:
+```Python
+for character in string:
+    do_something
+
+
+Example: 
+    my_string = "Hello world!"
+    print(my_string[0])
+
+    Output:
+    H
+
+    Example 2:
+
+    my_string = "Hello world!"
+    for character in my_string:
+        print(character)
+
+```
+    Output:
+    H
+    e
+    l
+    l
+    o
+
+    w
+    o
+    r
+    l
+    d
+    !
+
+
+**String slicing**
+It's possible to slice a string and return a substring (part of a string). To do this you can use the same slicing as with lists.
+The format is `string[start_inndex:end_index]`. In slicing the start_index is included and the end_index is not included.
+
+If the start_index is 0, it can be left out and simply write `[:end_index]`.
+Similarly if the end_index is the last character in the string, it can also be left out: `[start_index:]`
+```Python
+ ---------------------------
+Example: 
+
+my_string = "Hello world!"
+
+print(my_string[2:4])
+print(my_string[:4])
+print(my_string[4:])
+
+```
+
+**String contains**
+If you wish to check if a string contains a substring, you can use the keyword in, much like checking if a list contains an element.
+The format for this is:
+substring in string
+
+This results in a true or false, depending on whether the substring is in the string or not. It can be used in if statements, while loops, or saved in a variable.
+```Python
+Example: 
+    my_string = "Hello world!"
+    substring = "Hello"
+
+    substring_in_string = substring in my_string
+    print(substring_in_string)
+    if substring in my_string:
+        print("The substring is in my_string")
+
+```

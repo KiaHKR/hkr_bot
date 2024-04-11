@@ -1,0 +1,22 @@
+**Binary:**
+
+*Basics*
+```
+Binary numbers are written with 0s and/or 1s.
+
+When reading binary numbers, you usually start from right to left.
+The left most number is either a 0 or a 1.
+From there, each step you take to the left, you multiple the 1 by 2.
+When multiple values in the binary numbers contain a 1, you need take the sum of all the numbers.
+
+ ---------------------------
+Example: 
+    Binary 0 = Decimal 0
+    Binary 1 = Decimal 1
+    Binary 10 = Decimal 2
+    Binary 100 = Decimal 4
+
+    Binary 1010 = Decimal 2 + 8 = 10
+```
+
+

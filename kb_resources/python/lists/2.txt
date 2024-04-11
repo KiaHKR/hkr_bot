@@ -1,0 +1,58 @@
+__**Removing from a list, .remove()**__
+
+You can remove certain items from a list by using the list.remove() method.
+`list.remove(item)`
+
+```Python
+Example: 
+    
+	shopping_list = ["apples", "bananas", "cherries"]
+	shopping_list.remove("bananas")
+	print(shopping_list)
+
+	This will output the updated list : ["apples", "cherries"]
+
+```
+
+**Removing from a list, .pop()**
+
+You can remove items from a list by using the list.pop() method.
+The pop method takes an index as an argument instead of an item/item name
+`list.pop(1)`
+
+```Python
+Example: 
+    
+	shopping_list = ["apples", "bananas", "cherries"]
+	shopping_list.pop(1)
+	print(shopping_list)
+
+	This will output the updated list : ["apples", "cherries"]
+
+```
+
+**Nesting lists**
+You can nest lists by creating lists inside lists.
+`nested_list = [[item1, item2], [item3, item4], [item5, item6]]`
+
+This created 3 lists inside the list in variable nested_list
+
+To address an element in the sublists, you need to use double indexes.
+`nested_list[0][1]`
+
+This addresses the first list (with index 0) and then the second element in that list (with index 1) which is item2.
+
+
+```Python
+Example: 
+    coop = ["bananas", "apples", "good bread"]
+	ica = ["sausages", "steak", "chicken"]
+	shopping_lists = [coop, ica]
+```
+The shopping_lists variable now contains 2 lists called ica and coop.
+
+`print(shopping_list[1])`
+This will print the second list (since the index start at 0) which is ica.
+
+`print(shopping_list [0][2])`
+This will print from first list, coop (index 0) the third item (index 2) which is "good bread"

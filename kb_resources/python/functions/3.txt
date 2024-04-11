@@ -1,0 +1,29 @@
+_ _
+**Passing a variable to a function**
+We will now reuse the previous code, but instead, pass a variable to the code to run.
+A function can not use a variable that is anywhere in the code unless you pass it in the brackets of the function.
+```Python
+Example: 
+def print_hello(name):
+	print(f'User {name} identified.')
+	print(f"Hello and welcome to this example program, {name}.")
+	print("This program will show you how to use functions.")
+	print("You will find that functions allow for much cleaner and easier code as you continue your studies.")
+
+name = input("What is your name?: ")
+print_hello(name)
+name2 = input("What is the second users name?: ")
+print_hello(name2)
+
+```
+Output to the console : 
+	What is your name?: Tom
+	User Tom identified.
+	Hello and welcome to this example program, Tom. 
+	This program will show you how to use functions.
+	You will find that functions allow for much cleaner and easier code as you continue your studies.
+	What is the second users name?: Lasse
+	User Lasse identified.
+	Hello and welcome to this example program, Lasse.
+	This program will show you how to use functions.
+	You will find that functions allow for much cleaner and easier code as you continue your studies.

@@ -1,0 +1,17 @@
+{
+  "name": "HKRtestbot",
+  "version": "2.0.0",
+  "description": "HKR discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Valereandota",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "epic-free-games": "^3.1.1",
+    "nodemon": "^2.0.13"
+  }
+}

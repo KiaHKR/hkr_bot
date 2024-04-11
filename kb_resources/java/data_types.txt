@@ -1,0 +1,31 @@
+__**Data types**__
+
+**Primitive Data types**
+All variables in Java must be have specified data type unlike Python.
+Java in other words is "strongly typed"
+
+```Java
+byte byteMin = -128;
+byte byteMax = 127;
+short shortMin = -32768;
+short shortMax = 32767;
+long longMin = -9223372036854775808L;
+long longMax = 9223372036854775807L;
+int intMin= -2147483648;
+int intMax= 2147483647;
+float floatMin = -1.2345678f;
+float floatMax = 1.2345678f;
+double doubleMin = -1.234567891234567;
+double doubleMax = 1.234567891234567;
+char charVar = 'a';
+```
+
+**Strings**
+The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:
+```Java
+String myString = "Hello world";
+```
+The String type is so much used and integrated in Java, that some call it "the special ninth type".
+
+A String in Java is actually a non-primitive data type, because it refers to an object.
+The String object has methods that are used to perform certain operations on strings. Don't worry if you don't understand the term "object" just yet, that is covered in another chapter.

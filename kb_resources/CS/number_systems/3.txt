@@ -1,0 +1,41 @@
+**Octal:**
+
+*Step 1*
+```
+As general advice, it is much easier to convert numbers from binary to other number systems.
+For this reason, we will demonstrate the octal conversions with the binary system.
+When we have a binary number that is to be converted to octal, we regroup the numbers in pair of 3 starting from the right
+
+ ---------------------------
+Example: 
+
+    Binary 10100110 =  010 100 110
+
+```
+
+*Step 2*
+```
+From here we need to convert each set of 3 into decimal seperately.
+
+ ---------------------------
+Example: 
+
+    010 = 2^0x0 + 2^1x1 + 2^2x0 = 2
+    100 = 2^0x0 + 2^1x0 + 2^2x1 = 4
+    110 = 2^0x0 + 2^1x1 + 2^2x1 = 6
+
+```
+
+*Step 3*
+```
+From here, you simply put the number back together in the same order as they were when we split them into binary sets of 3.
+This number will give you the final result of the conversion.
+
+ ---------------------------
+Example: 
+
+    010 100 110 = 2 4 6
+
+    The binary number 10100110 is 246 is octal.
+
+```

@@ -1,0 +1,61 @@
+__**For loops:**__
+
+**Basic for loop**
+
+A for loop is a specific loop that is used to iterate (or cycle) through an iterable (String, List, Tuple,..)
+A for loop will address each element in the iterable once and then execute the code written in the loop.
+When starting this loop you give the individual element a variable name (to address it) and give it the iterable element.
+```
+for element_variable_name in iterable: #iterable being a list, string or similar code to execute
+```
+```Python
+Example: 
+    order1 = ["kebab", 5,]
+    order2 = ["good bread", 3]
+    order3 = ["candy", 4]
+    order_list = [order1, order2, order3]
+
+    for orders in order_list:
+        print(orders[0])
+```
+This will output the String of the item name in each order like follows: 
+```
+"kebab"
+"good bread"
+"candy"
+```
+
+
+**Nesting for loops**
+Nesting loops within each other is possible with all kinds of loops.
+In this case, you can create a for loop in a for loop when multiple iterables exist together.
+
+```
+for variable1 in list1:
+    for variable2 in list2:
+        code to execute
+    code to execute
+```
+```Python
+Example: 
+	order1 = ["kebab", 5,]
+	order2 = ["good bread", 3]
+	order3 = ["candy", 4]
+	order_list = [order1, order2, order3]
+
+for order in order_list:
+    for details in order:
+        print(details)
+```
+This will first loop through each sublist.
+Then, when it addresses a sublist, it will address each element in the sublist and output it : 
+```
+kebab
+5
+good bread
+3
+candy
+4
+
+```
+

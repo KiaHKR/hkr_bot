@@ -1,0 +1,84 @@
+**Operations on numbers:**
+
+*Basics*
+```
+Just like with decimal numbers, we can perform operation on numbers in different number systems.
+In order to perform operations on numbers, unless the number is in decimal format, it is easier to convert the number to binary format and then perform the operation.
+
+ ---------------------------
+Example: 
+    Hexadecimal addition -> 16B + A1
+
+    16B (Hex.) to Binary  -> 1    6     B
+                          -> 0001 0110 1011
+
+    A1  (Hex.) to Binary  -> A      1
+                          -> 1010  0001
+```
+
+
+*Addition*
+```
+Once we have the numbers in binary format, we start performing the addition.
+First, we start by lining up both binary numbers on top of each other, aligned on the right.
+If one number is bigger than the other, we add 0's on the left to compensate for it.
+
+The binary addition follows the idea of a table calculation.
+If either number is 1, the output is also 1.
+If both numbers are 1, the ouput is 0 and we report 1 towards the left.
+If both numbers are 0, the ouput is 0.
+
+Once we finish the addition, we can then reconvert the binary number to hexadecimal and have the result.
+
+ ---------------------------
+Example: 
+    
+    Aligning : 
+
+               0001 0110 1011
+             + 0000 1010 0001  
+              ---------------
+             = 0010 0000 1100
+
+    Converting : 
+
+            0010 0000 1100
+            2      0    C
+
+    Final results = 20C
+
+```
+
+
+*Subtraction*
+```
+First, we start by lining up both binary numbers on top of each other, aligned on the right.
+If one number is bigger than the other, we add 0's on the left to compensate for it.
+
+The binary subtraction also follows the idea of a table calculation.
+If the top number is 1 and the bottom one 0, the output is also 1.
+If the bottom number is 1 and the top one 0, the output is also 1 and we report 1 towards the left.
+If both numbers are 1, the ouput is 0.
+If both numbers are 0, the ouput is 0.
+
+Once we finish the addition, we can then reconvert the binary number to hexadecimal and have the result.
+
+ ---------------------------
+Example: 
+    
+    Aligning : 
+
+               0001 0110 1011
+             - 0000 1010 0001  
+              ---------------
+             = 0000 1100 1010
+
+    Converting : 
+
+            0000 1100 1010
+              0    C    A
+
+    Final results = 0CA or CA
+
+```
+

@@ -1,0 +1,49 @@
+__**args**__
+
+**args explained**
+args is a list of commands that are entered usually through a terminal such as cmd (command prompt).
+The list that is args adds the terms that are entered AFTER python is called. In python the args list is accessed through sys.argv.
+
+If we enter the following in cmd : `python testing.py test1 test2`
+sys.argv will be containing the following commands in its list `["testing.py", "test1", "test2"]`
+Example: 
+
+If we enter the following in cmd : `python car.py bugatti ferrari`
+
+Assuming the code in car.py looks like this:
+```Python
+import sys
+
+print(sys.argv[0])
+print(sys.argv[1])
+```
+
+The output will be:
+```Python
+car.py
+bugatti
+```
+
+**args when running code in VSCode**
+When running code through the built in run function in VSCode it isn't possible to pass any command line arguments (args) to the script.
+
+Say you need to access the first command line argument (the element at index one in sys.argv), to print it out. 
+
+A solution for this could go as in the following code:
+```Python
+import sys
+
+sys.argv = ["", "bugatti"]
+print(sys.argv[1])
+```
+
+Ouput:
+```Python
+bugatti
+```
+
+Notice in this example that it is possible to assign sys.argv manually in your code. Once you want to use it through the actual command line, you simply have to delete the line `sys.argv = ["", "bugatti"] and the script will function as intended.
+
+It's also worth noting that there is an empty element before the first command line argument. This is done because using an actual command line will make the first elementin sys.argv the name of the file and so the first command line argument is found in sys.argv[1].
+
+This is a small way to "cheat" the system, so you don't need to run the script from a command line every single time you want to test it.

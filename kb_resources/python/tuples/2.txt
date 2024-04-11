@@ -1,0 +1,61 @@
+
+**Nesting tuples**
+```
+You can nest tuples by creating tuples inside tuples.
+`nested_tuple = ((item1, item2), (item3, item4), (item5, item6))`
+
+This created 3 tuples inside the tuple in variable nested_tuple.
+
+To address an element in the subtuple, you need to use double indexes.
+`nested_tuple[0][1]`
+
+This addresses the first tuple (with index 0) and then the second element in that tuple (with index 1) which is item2.
+
+```Python
+Example: 
+    coop = ("bananas", "apples", "good bread")
+	ica = ("sausages", "steak", "chicken")
+	shopping_tuples = (coop, ica)
+	The shopping_tuples variable now contains 2 tuples called ica and coop.
+```
+`print(shopping_tuples[1])`
+This will print the second tuple (since the index start at 0) which is ica.
+
+`print(shopping_tuples [0][2])`
+This will print from first tuple, coop (index 0) the third item (index 2) which is "good bread"
+
+
+**Negative indexing**
+You can access a tuple starting from the end by indexing with negatives.
+
+`tuple[-1]`
+
+
+```Python
+Example: 
+    
+	shopping_tuple = ("apples", "bananas", "cherries")
+	print(shopping_tuple[-1])
+
+```
+This will output the first item from the end of the tuple : "cherries"
+
+**Tuple slicing**
+You can address multiple items in a tuple by using slicing.
+While using this method, you give your code a certain range in your tuple of the element you would like to access in form of indexes.
+The last item in this range is NOT included.
+
+```Python
+tuple[0:2]
+tuple[2:4]
+tuple[5:7]
+
+Example:
+	shopping_tuple = ("apples", "bananas", "cherries", "coconut", "good bread")
+	print(shopping_tuple[0:2])
+```
+This will output the items of the index in range 0 to 2 with the index2 excluded : ["apples", "bananas"]
+
+`print(shopping_tuple[3:4])`
+This will output the items of the index in range 3 to 4 with the index4 excluded : ["coconut"]
+

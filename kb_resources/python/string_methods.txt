@@ -1,0 +1,61 @@
+__**String methods**__
+
+**.lower()**
+```
+Returns the string in all lowercase letters.
+```
+
+**.upper()**
+```
+Returns the string in all uppercase letters.
+```
+
+**.replace(foo, bar)**
+```
+Replaces all occurences of foo in the string with bar. 
+```
+
+**.split(foo)**
+```
+Splits the string at all locations of foo. Returns a list of the resulting strings.
+```
+
+**.capitalize()**
+```
+Capitalizes the first letter in the string.
+```
+
+**.title()**
+```
+Capitalizes the first letter of all words in the string.
+```
+
+**.count(foo)**
+```
+Counts how many times foo is detected in the string.
+```
+
+**.endswith(foo)**
+```
+Returns true if the string ends with foo.
+```
+
+**.startswith(foo)**
+```
+Returns true if the string starts with foo.
+```
+
+**.strip()**
+```
+Strips blank spaces and escape characters (\n, \t, \r) from both ends of the string.
+```
+
+**.lstrip()**
+```
+Strips blank spaces and escape characters (\n, \t, \r) from the left side of the string.
+```
+
+**.rstrip()**
+```
+Strips blank spaces and escape characters (\n, \t, \r) from the right side of the string.
+```

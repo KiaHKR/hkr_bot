@@ -1,0 +1,14 @@
+**Operations on numbers:**
+
+*Multiplying a binary number*
+```
+In order to multiply a binary number, you perform left shifts on the number.
+When multiplying a binary number by another, we need to find out the <2^n> form of the second number.
+Once we have it, we perform a left shift n times on the first number.
+
+ ---------------------------
+Example: 
+
+ 
+```
+

@@ -1,0 +1,74 @@
+__**Basics for Python :**__
+
+**String to variable**
+
+`VariableName = "Name"`
+Assigns the string 'Name' to a variable.
+
+**Integer to variable**
+
+`variable_name = 2`
+Assigns the Integer '2' to a variable
+
+
+**Boolean value in variable**
+
+`variableName = True `
+Assigns the Boolean value True (or 1) to a variable
+In Boolean value, True and 1 are considered to be the same.
+The same applies to False and 0.
+
+**Print**
+
+print() 
+Prints the contents in the brackets.
+ 
+```Python
+Example: 
+    print("Hello World")
+``` 
+This prints "Hello World" to the console.
+
+
+**Print with a variable**
+
+`print(variable1)`
+Prints the variable1's contents to the console.
+```Python
+Example:
+    variable1 = "Hello World" 
+    print(variable1)
+```
+This prints "Hello World" to the console.
+
+**Print f String**
+
+`print(f"Hello {variable1}")`
+Prints the contents in the brackets including the variable's contents.
+
+```Python
+Example: 
+    name = "Lasse"
+    age = "26"
+    print("Hello {name}. You are {age} years old.")
+    
+``` 
+This prints "Hello Lasse. You are 26 years old." to the console.
+
+**Input**
+`variableName = input(‘Enter content’)`
+Assigns the content of the input as a String to a variable.
+
+**Math with variables**
+
+You can do math with variables of the same type (Integer, float, ...)
+`variable3 = variable1 x variable2`
+```Python
+Example: 
+    variable1 = 2
+    variable2 = 5
+    variable3 = variable1 x variable2
+
+```
+
+This will perform 2x5 and assign it to the variable3

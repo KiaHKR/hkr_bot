@@ -1,0 +1,26 @@
+__**File Handler**__
+
+**Reading file**
+Python has built-in features that allow for file reading.
+First, a file needs to be opened with the open(file_name, read/write) method.
+Then, if writing mode is selected, we can use the write(content) method to write content into the file.
+Finally, we use the close() method to close the file.
+To read, the mode is defined by r.
+To write, the mode is defined by w.
+
+```Python
+variable1 = open("file.txt", "r")
+variable1.write("content")
+variable1.close()
+```
+
+Example modified from Canvas:
+```Python
+first_number = input("Enter the first number: ")
+second_number = input("Enter the second number: ")
+
+numbers_file = open('numbers.txt', 'w')
+numbers_file.write(str(first_number) + '\n')
+numbers_file.write(str(second_number) + '\n')
+numbers_file.close()
+```

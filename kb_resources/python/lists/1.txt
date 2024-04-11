@@ -1,0 +1,43 @@
+__**Lists:**__
+
+**Creating list**
+You create a new list by writing : 
+`listname = []`
+When creatng a list, you can add items to it upon creating it.
+`listname = ["item1", "item2", "item3"]`
+
+A list is iterable meaning each element in the list can be adressed individually.
+```Python
+Example: 
+    
+	shopping_list = ["apples", "bananas", "cherries"]
+
+```
+
+**Adressing a specific item in a list**
+You can address a specific item in the list by using indexes.
+While you might think the first element in a list has index 1, the indexing itself always starts at 0.
+To address the first element in your list, you address your list and then provide it the index of the item.
+
+`list[0]`
+
+```Python
+Example: 
+    
+	shopping_list = ["apples", "bananas", "cherries"]
+	print(shopping_list[1])
+```
+	This will output the item at index 1 : "bananas"
+	Since indexing starts at 0, "apples" would be 0 and "bananas" in this case is 1.	
+
+**Adding to a list**
+You can add items to a list by using the list.append() method.
+`list.append(item)`
+```Python
+Example: 
+    
+	shopping_list = ["apples", "bananas", "cherries"]
+	shopping_list.append("coconut")
+	print(shopping_list)
+```
+	This will output the updated list : ["apples", "bananas", "cherries", "coconut"]

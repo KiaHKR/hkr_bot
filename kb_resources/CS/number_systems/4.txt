@@ -1,0 +1,42 @@
+**Hexadecimal:**
+
+*Step 1*
+```
+Similar to octal, we also want to use binary number to convert to hexadecimal.
+When we have a binary number that is to be converted to octal, we regroup the numbers in pair of 4 starting from the right
+
+ ---------------------------
+Example: 
+
+    Binary 10100110 =  1010 0110 
+
+```
+
+*Step 2*
+```
+From here we need to convert each set of 4 into decimal seperately.
+
+ ---------------------------
+Example: 
+
+    0110 = 2^0x0 + 2^1x1 + 2^2x1 + 2^3x0 = 6
+    1010 = 2^0x0 + 2^1x1 + 2^2x0 + 2^3x1 = 10
+
+```
+
+*Step 3*
+```
+From here, you simply put the number back together in the same order as they were when we split them into binary sets of 3.
+This number will give you the final result of the conversion.
+
+Important! 
+In the hexadecimal number system, the numbers 10 to 15 are replaced by the letters A-F.
+
+ ---------------------------
+Example: 
+
+    1010 0110 = A6
+
+    The binary number 10100110 is A6 is hexadecimal.
+
+```

@@ -1,0 +1,30 @@
+_ _
+**Returning a variable from a function**
+A function can be used to perform actions and operation and then return a value to where it was called.
+In this idea, you can for example program a function to perform mathematical operations and execute them with any input.
+
+When we create a function that has a return value, we NEED TO store it in a variable where the function was called!!
+```Python
+Structure :
+	def function1(variable):
+		variable2 = code/operation to execute
+		return variable2
+
+	variable = input("")
+	variable3 = function1(variable)
+
+ ---------------------------
+ 
+Example: 
+	def addition(value1, value2):
+		sum = value1 + value2
+		return sum
+
+	print("Welcome to the addition calculator.")
+	number1 = int(input("Please enter the first number"))
+	number2 = int(input("Please enter the second number"))
+
+	total = addition(value1, value2)
+	print(total)
+
+```

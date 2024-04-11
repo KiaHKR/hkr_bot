@@ -1,0 +1,63 @@
+__**If statements :**__
+
+**Basic if**
+If statements are snippets of code that are executed IF a given condition is met. 
+```Python
+
+Structure : 
+	if condition1 = True:
+		code to execute
+	---------------------------
+	Example: 
+		love = True
+		if love == True:
+			print("Love is in the air")
+
+```
+This prints "Love is in the air" to the console.
+
+**If else**
+If statements can also have an else attached to it which will be executed if the condition is not met.
+```Python
+Structure : 
+	if condition1 == True:
+		code to execute
+	else:
+		code to execute (if not True)
+	---------------------------
+	Example: 
+		love = True
+		if love == True:
+			print("Love is in the air")
+		else:
+			print("What is love?")
+
+```
+This prints "Love is in the air" to the console.
+
+**Nested if**
+If statements can also be nested to have multiple if statements.
+```Python
+Structure : 
+	if condition1 == True
+		if condition2 == True
+			code to execute (If both are true)
+		else:
+			code to execute (if c1 is true and c2 is false)
+  	  else:
+		code to execute (if c1 is false)
+ ---------------------------
+Example: 
+	allergy = ‘Fish’
+	lunch = ‘Beef’
+	dinner = ‘Fish’
+		if lunch != allergy:
+			if dinner != allergy:
+				Print(‘We’ll have lunch and dinner!’)
+			else:
+				Print(‘We’ll only have lunch!’)
+		else:
+			Print(‘Sorry we’ll have to skip!’)
+
+```
+

@@ -1,0 +1,58 @@
+__**Advanced Strings**__
+
+**String padding**
+Formatting a string in python is done using the f-string mentioned in the basics topic.
+
+To add padding to a string the following format is used {"":>padding_amount}.
+Using < adds padding on the left, using > adds padding on the right, and using ^ centers the text.
+
+If you want a different padding character than a blank space (default), you can add it like so:
+```
+{"":_>padding_amount}
+This will add underline characters instead of blankspaces.
+ ---------------------------
+Example: 
+
+my_string = "Hello world!"
+my_string2 = "Give me padding!"
+
+print(f"{'First string:':<15} {my_string:>20}")
+print(f"{'Second string:':<15} {my_string2:>20}")
+
+Ouput:
+First string:           Hello world!
+Second string:      Give me padding!
+
+```
+
+**String shortening**
+Strings can be truncated (shortened) using the following format:
+```
+{'':.length_to_shorten_to}
+ ---------------------------
+Example: 
+
+my_string = "Hello world!"
+print(f"{my_string:.10}")
+
+Output:
+Hello worl
+
+```
+
+**Formatting Floats**
+Float numbers can be shortened using the following format:
+```
+{float:.number_of_decimalsf}
+ ---------------------------
+Notice that there is both a "." in front of the specified number as well as an "f" at the end.
+Example: 
+
+my_float = 10.39482938
+
+print(f"{my_float:.2f}")
+
+Output:
+10.39
+
+```

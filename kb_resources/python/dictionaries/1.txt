@@ -1,0 +1,35 @@
+__**Dictionaries**__
+
+**Dictionaries basics**
+Dictionaries are used to store data values in pairs.
+They are stored in the formed of key:value.
+key being one data and value being another.
+Like sets, dicitionairires do not allow duplicates.
+You can create a dictionairy by using the following format: 
+`dictionary = {key1:value1, key2:value2, key3:value3}`
+
+```Python
+Example: 
+	user_pw_dict = { "lasse12":"igbiwoj32",
+			"tom2144":"wekeqonf2",
+			"kia9312":"jqjqi2h33",
+			}
+
+```
+
+**Looking up in a dictionary**
+In order to look something up in a dictionary, we write the dictionary name followed by square brackets that contain a key.
+
+`dictionary_1["key"]`
+
+```Python
+Example: 
+	user_pw_dict = { "lasse12":"igbiwoj32",
+			"tom2144":"wekeqonf2",
+			"kia9312":"jqjqi2h33",
+			}
+
+	print(user_pw_dict["tom2144"])
+```
+This will output the following:
+`wekeqonf2`

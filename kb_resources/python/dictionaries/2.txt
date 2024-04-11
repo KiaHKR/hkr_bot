@@ -1,0 +1,33 @@
+_ _
+**Dictionairy methods**
+Multiple simple methods exist to use with dictionaries to get the data desires.
+`dictionary.keys()`  	returns a list of all keys
+`dictionary.values()`	returns a list of all values
+`dictionary.items()` 	returns a list of all key:value pairs
+`dictionary.update()`	adds/updates a key:value pair
+`dictionary.pop()`	takes a key and removes a given key and its value
+
+```Python
+Example: 
+	user_pw_dict = { "lasse12":"igbiwoj32",
+			"tom2144":"wekeqonf2",
+			"kia9312":"jqjqi2h33",
+			}
+```
+
+`print(user_pw_dict.keys())`
+Outputs : `dict_keys(['lasse12', 'tom2144', 'kia9312'])`
+
+`print(user_pw_dict.values())`
+Outputs : `dict_values(['igbiwoj32', 'wekeqonf2', 'jqjqi2h33'])`
+
+`print(user_pw_dict.items())`
+Outputs : `dict_items([('lasse12', 'igbiwoj32'), ('tom2144', 'wekeqonf2'), ('kia9312', 'jqjqi2h33')])`
+
+`user_pw_dict.update({"testuser":"asdfjk"})`
+`print(user_pw_dict.items())`
+Outputs : `dict_items([('lasse12', 'igbiwoj32'), ('tom2144', 'wekeqonf2'), ('kia9312', 'jqjqi2h33'), ('testuser', 'asdfjk')])`
+
+`user_pw_dict.pop("lasse12")`
+`print(user_pw_dict.items())`
+Outputs : `dict_items([('tom2144', 'wekeqonf2'), ('kia9312', 'jqjqi2h33')])`

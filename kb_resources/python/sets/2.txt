@@ -1,0 +1,31 @@
+_ _
+**Difference**
+In order to find out all the items that are in one set, but not the other.
+To do this, we can use the .difference() method or the - operator.
+
+```Python
+set_1 = {item1, item2, item3}
+set_2 = {item3, item4, item5}
+
+print(set_1.difference(set_2)
+```
+or
+
+`print(set_1 - set_2)`
+
+```
+*Method 1 .difference(): *
+Example: 
+    set_1 = {"apples", "bananas", "cherries"}
+    set_2 = {"good bread", "apples", "chicken"}
+    print(set_1.difference(set_2))
+```
+This will output a set containing the items that are found in set_1 but are not present in set_2.
+
+*Method 2 -:*
+```Python
+set_1 = {"apples", "bananas", "cherries"}
+set_2 = {"good bread", "apples", "chicken"}
+print(set_1 - set_2)
+```
+This will output a set containing the items that are found in set_1 but are not present in set_2.

@@ -1,0 +1,47 @@
+__**Pickle**__
+
+**Using pickle**
+```
+In order to use any pickle methods, we first need to import pickle at the beginning of the file.
+
+ ---------------------------
+Example: 
+
+import pickle
+
+code to exectue
+
+```
+
+**Pickling a file**
+Once pickle has been imported, we can use it to pickle or unpickle files.
+To pickle a file, we use the method called pickle.dump(data_to_pickle, output_file)
+When using pickle, we use "wb" for write mode and "rb" for read mode when opening a file
+`rb` = read binary, `wb` = write binary
+Once we are done pickling a file, we need to remember to close it.
+
+
+```Python
+Example:
+    import pickle
+
+    user_ids = ["jke12", "kdaiq2", "asdlr"]
+    file_name = input("Enter the file you want to pickle: ")
+    opened_file = open(file_name, "wb")
+    pickle.dump(user_ids, opened_file)
+    opened_file.close()
+```
+
+**Unpickling a file**
+In order to unpickle a file, we use the method called pickle.load()
+```Python
+Example: 
+
+import pickle
+
+user_ids = ["jke12", "kdaiq2", "asdlr"]
+file_name = input("Enter the file you want to unpickle: ")
+opened_file = open(file_name, "wb")
+pickle.load(opened_file)
+opened_file.close()
+```

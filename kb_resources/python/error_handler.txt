@@ -1,0 +1,37 @@
+__**Error Handler**__
+
+**Try Except Else**
+
+Sometimes when you have operations that you want to do that are at high risk for failing, you might want to add a Try Except (Else).
+Instead of "crashing" the program, this will catch the error and continue the code as you instruct it.
+
+In the Try, you enter the code that is prone to failing.
+In the Except, you tell it which errortype it should catch and what to do.
+In the Else, you enter the rest of the code that is to execute if the Try finishes without issues.
+You can also add a Finally to it to force the code to continue even if an error is caught.
+
+
+
+```Python
+Example: 
+
+number_list = []
+done = False
+try:
+    while not done:
+        number = int(input("Please enter a NUMBER"))
+        number_list.append(number)
+        answer = input("Would you like to add another number?")
+        if answer == "no":
+            done = True
+except ValueError:
+    print("An error has occured. Please make sure you input a number next time.")
+else:
+    print(number_list)
+```
+
+In this example, when we convert the input from number to an int, we risk a ValueError if the users enters a string.
+Instead of crashing, this program will actually catch the error and execute what we have in the except statement.
+Output : 
+`An error has occured. Please make sure you input a number next time.`
+

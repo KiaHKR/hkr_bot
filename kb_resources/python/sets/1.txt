@@ -1,0 +1,82 @@
+__**Sets**__
+
+**Basics on sets**
+In Python, sets have similar use-case as they do in maths.
+In a set, duplicates of the same item are not allowed.
+We create and use different sets with methods like `set1.intersect(set2)`.
+To create a set, we define a variable with `{}`.
+
+
+`set_1 = {item1, item2, item3}`
+
+```Python
+Example: 
+    set_1 = {"apples", "bananas", cherries"}
+```
+
+**Intersection**
+
+In order to find out if an item in set1 is in set2, we can use the .intersection() method or the & operator.
+
+```Python
+set_1 = {item1, item2, item3}
+set_2 = {item3, item4, item5}
+
+print(set_1.intersection(set_2)
+```
+or
+
+`print(set_1 & set_2)`
+
+
+```Python
+*Method 1 .intersection():*
+Example: 
+
+    set_1 = {"apples", "bananas", "cherries"}
+    set_2 = {"good bread", "apples", "chicken"}
+    print(set_1.intersection(set_2))
+```
+This will output a set containing the items that are found in both sets.
+
+*Method 2 &:*
+```Python
+set_1 = {"apples", "bananas", "cherries"}
+set_2 = {"good bread", "apples", "chicken"}
+print(set_1 & set_2)
+```
+This will output a set containing the items that are found in both sets.
+
+**Union**
+```
+In order to find out all the items that are in both sets, we can use the .union() method or the | operator.
+
+set_1 = {item1, item2, item3}
+set_2 = {item3, item4, item5}
+
+print(set_1.union(set_2)
+
+or
+
+print(set_1 | set_2)
+
+ ---------------------------
+Example: 
+
+Method 1 .union(): 
+
+set_1 = {"apples", "bananas", "cherries"}
+set_2 = {"good bread", "apples", "chicken"}
+print(set_1.union(set_2))
+
+This will output a set containing the combined items that are found in both sets.
+
+Method 2 |:
+
+set_1 = {"apples", "bananas", "cherries"}
+set_2 = {"good bread", "apples", "chicken"}
+print(set_1 | set_2)
+
+This will output a set containing the combined items that are found in both sets.
+
+```
